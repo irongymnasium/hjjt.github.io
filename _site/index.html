@@ -1,54 +1,163 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="pt-br">
-
 <head>
-
-    <meta http-equiv="content-language" content="pt-br" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Conheça nossa estrutura, variedade de atividades, qualidade de nossa academia e o profissionalismo dos instrutores. Possuímos uma enorme quantidade de atividades para todos tipos de pessoas e gostos." />
-    <meta name="keywords" content="academia londrina, academia">
-
-	  <link href="/static/img/favicon.png" rel="shortcut icon" />
-
-    <link type="text/css" href="assets/css/default.css" rel="stylesheet" media="screen, projection" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-
-    <title>A sua melhor opção de academia em Londrina - IronGymnasium Academia, Musculação, Lutas e saúde</title>
-
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-</head>
-
+<meta charset="UTF-8">
+<meta name="author" content="Leandro Bezerra (Front-End)" />
+<meta name="robot" content="index,follow" />
+<meta name="rating" content="General" />
+<meta name="distribution" content="global" />
+<meta name="language" content="pt-br" />
+<title>HJJT - Horse Jiu-Jitsu Team </title>
+<link rel="stylesheet" type="text/css" media="all" href="bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
+<script>$.fn.cycle.defaults.autoSelector = '.carousel';</script>
 <body>
 
-  <img src="assets/img/banner_novo_site.jpg" alt="Novo site em breve!"/>
+<!--Container-->
+<div class="container">
 
+<header class="header">
 
-  <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+<div class="facebook-box">
+	<img src="demo-face.png"/>
+</div>
 
-  <!-- <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+<div class="horario text-center" onclick="window.location='horarios.html'">
+		<img src="imagens/content-icon-relogio.png"/>
+		<h4>Horário<br>de treinos</h4>
+</div>
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-5200340-19']);
-    _gaq.push(['_trackPageview']);
+<div class="logo">
+	<img src="imagens/logo-topo.png"/>
+</div>
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script> -->
+<div class="slide">
+<div class="carousel" 
+    data-cycle-fx=carousel
+    data-cycle-timeout=1500
+    data-cycle-carousel-visible=1
+    >
+    <img src="http://jquery.malsup.com/cycle2/images/beach1.jpg" style="width:632px; height:416px;">
+    <img src="http://jquery.malsup.com/cycle2/images/beach1.jpg" style="width:632px; height:416px;">
+    <img src="http://jquery.malsup.com/cycle2/images/beach1.jpg" style="width:632px; height:416px;">
+    <img src="http://jquery.malsup.com/cycle2/images/beach1.jpg" style="width:632px; height:416px;">
+    <img src="http://jquery.malsup.com/cycle2/images/beach1.jpg" style="width:632px; height:416px;">
+</div>
+</div>
+
+<div class="helio-gracie">
+	<h4>Hélio Gracie</h4>
+	<p><b>Nascimento:</b></p>
+	<p>1 de outubro de 1913</p>
+	<p><b>Falecimento:</b></p>
+	<p>29 de janeiro de 2009, </p>
+</div>
+
+<div class="helio-gracie-desc">
+	<p class="pull-left">Eu não inventei o jiu-jítsu, apenas o adaptei para mim,
+	criando alavancas que me deram condição de fazer
+	os movimentos necessários sem precisar usar muita força
+	ou habilidade para superar lutadores maiores e 
+	mais fortes do que eu.</p>
+</div>
+
+</header><!--Header END-->
+
+<div class="list-videos">
+	<div class="tit-video text-center">
+		<img src="imagens/content-icon-video.png"/>
+		<h4>Vídeos</h4>
+	</div>
+
+	<div class="box-carousel">
+	<a href=# id=vprev><button class="botLeft"></button></a>
+	<div class="carousel list-videos-box" 
+    data-cycle-fx=carousel
+    data-cycle-timeout=0
+    data-cycle-carousel-visible=4
+    data-cycle-next="#vnext"
+    data-cycle-prev="#vprev"
+    data-cycle-pager="#pager"
+    >
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+    <img src="demo-video.jpg"/>
+	</div>
+	<a href=# id=vnext><button class="botRight"></button></a>
+	</div><!--Carousel END-->
+</div><!--Lista Vídeos END-->
+
+<div class="div-20"></div>
+
+<div class="list-fotos">
+	<div class="tit-imagens text-center">
+		<img src="imagens/content-icon-video.png"/>
+		<h4>Imagens</h4>
+	</div>
+	
+	<div class="box-carousel">
+	<a href=# id=fprev><button class="botLeft"></button></a>
+	<div class="carousel list-videos-box" 
+    data-cycle-fx=carousel
+    data-cycle-timeout=0
+    data-cycle-carousel-visible=4
+    data-cycle-next="#fnext"
+    data-cycle-prev="#fprev"
+    data-cycle-pager="#pager"
+    >
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+    <img src="demo-foto.jpg"/>
+	</div>
+	<a href=# id=fnext><button class="botRight"></button></a>
+	</div><!--Carousel END-->
+</div><!--Lista Fotos END-->
+
+<div class="div-20"></div>
+
+<footer class="footer">
+	<div class="pull-left iron">
+		<img src="imagens/footer-logo-iron.png"/>
+	</div>
+	<div class="pull-left bd">
+		<p><b>Telefone: (44) 3621-1234</b></p>
+		<p>Av. Higienópolis, 789 | Londrina - PR</p>
+		<p><u>contato@irongymnasium.com.br</u></p>
+	</div>
+	<div class="pull-left bd">
+		<img src="imagens/footer-logo-snc.png"/>
+	</div>
+	<div class="pull-left bd storm">
+		<img src="imagens/footer-logo-storm.png"/>
+	</div>
+	<div class="pull-left rodolfo">
+		<img src="imagens/footer-logo-rodolfo.png"/>
+	</div>
+</footer>
+
+</div><!--Container END-->
+
+		
 </body>
-
 </html>
