@@ -13,7 +13,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 <script src="http://malsup.github.io/jquery.cycle2.js"></script>
 <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
-<script>$.fn.cycle.defaults.autoSelector = '.carousel';</script>
+<script>$.fn.cycle.defaults.autoSelector = '.carousel';</script> 
 <body>
 
 <!--Container-->
@@ -22,7 +22,7 @@
 <header class="header">
 
 <div class="facebook-box">
-	<img src="demo-face.png"/>
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FHJJT.Horse.Jiu.Jitsu.Team&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=158755957599517" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
 </div>
 
 <div class="horario text-center" onclick="window.location='horarios.html'">
@@ -80,20 +80,12 @@
     data-cycle-carousel-visible=4
     data-cycle-next="#vnext"
     data-cycle-prev="#vprev"
-    data-cycle-pager="#pager"
+	data-cycle-slides=">li"
     >
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
-    <img src="demo-video.jpg"/>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(video-1.jpg);"><img src="imagens/content-video-play.png"/></li>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(video-3.jpg);"><img src="imagens/content-video-play.png"/></li>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(video-2.jpg);"><img src="imagens/content-video-play.png"/></li>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(video-4.jpg);"><img src="imagens/content-video-play.png"/></li>
 	</div>
 	<a href=# id=vnext><button class="botRight"></button></a>
 	</div><!--Carousel END-->
@@ -115,20 +107,12 @@
     data-cycle-carousel-visible=4
     data-cycle-next="#fnext"
     data-cycle-prev="#fprev"
-    data-cycle-pager="#pager"
+    data-cycle-slides=">li"
     >
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
-    <img src="demo-foto.jpg"/>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(foto-1.jpg);"><img src="imagens/content-video-play.png"/></li>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(foto-3.jpg);"><img src="imagens/content-video-play.png"/></li>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(foto-2.jpg);"><img src="imagens/content-video-play.png"/></li>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(foto-4.jpg);"><img src="imagens/content-video-play.png"/></li>
 	</div>
 	<a href=# id=fnext><button class="botRight"></button></a>
 	</div><!--Carousel END-->
@@ -157,7 +141,6 @@
 </footer>
 
 </div><!--Container END-->
-
 		
 </body>
 </html>

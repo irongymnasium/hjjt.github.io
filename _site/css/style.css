@@ -53,7 +53,6 @@ a:hover {color:#FFF;}
 .horario-imagens .botTop {margin-bottom:5px; background:url(../imagens/content-seta-top.jpg) #680001 center center no-repeat;}
 .horario-imagens .botBottom {margin-top:-5px; background:url(../imagens/content-seta-bottom.jpg) #680001 center center no-repeat;}
 .list-fotos-box-horario {margin:0 auto; padding:0; list-style:none;}
-.list-fotos-box-horario img {width:132px; height:95px; margin-bottom:4px; border:4px solid #DBDADA;}
 
 /* Carousel */
 .list-videos {height:149px; background:url(../imagens/content-bg-list-video-bg.png);}
@@ -67,7 +66,7 @@ a:hover {color:#FFF;}
 .list-videos h4 {color:#0E0E0E; font-size:18px;}
 
 .list-fotos .box-carousel,
-.list-videos .box-carousel {float:left; width:735px; margin-left:30px;}
+.list-videos .box-carousel {overflow:hidden; float:left; width:750px; margin-left:30px; display:table;}
 
 .list-fotos button,
 .list-videos button {outline:0px; width:13px; height:124px; border:0px; margin-top:11px;}
@@ -75,15 +74,14 @@ a:hover {color:#FFF;}
 .list-fotos .botLeft,
 .list-videos .botLeft {float:left; margin-right:2px; background:url(../imagens/content-seta-left.jpg) #800000 center center no-repeat;}
 
+.img-lk {cursor:pointer; list-style:none; border:4px solid #CCC; margin:0px 4px; min-width:154px; min-height:114px; background-position:center center; background-repeat:no-repeat;}
+.img-lk-ver {cursor:pointer; list-style:none; border:4px solid #CCC; margin:4px 0px; min-width:130px; min-height:90px; background-position:center center; background-repeat:no-repeat;}
+
 .list-fotos .botRight,
 .list-videos .botRight {float:right; background:url(../imagens/content-seta-right.jpg) #800000 center center no-repeat;}
 
 .list-fotos-box,
-.list-videos-box {margin:0; padding:0; list-style:none;}
-.list-videos-box img {border:4px solid #DBDADA; margin:0px 4px;}
-
-.list-fotos-box,
-.list-videos-box {float:left; width:690px; margin-top:11px;}
+.list-videos-box {float:left; min-width:710px; height:124px; margin-top:11px; margin-left:5px;}
 
 /* Footer */
 .footer {height:89px; margin-bottom:35px; background:url(../imagens/content-bg-rodape.png) top left no-repeat;}
