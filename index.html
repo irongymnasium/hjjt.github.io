@@ -23,7 +23,7 @@
 <header class="header">
 
   <div class="facebook-box">
-    <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FHJJT.Horse.Jiu.Jitsu.Team&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=158755957599517" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+    <div class="fb-like" data-href="https://www.facebook.com/HJJT.Horse.Jiu.Jitsu.Team" data-width="350" data-layout="standard" colorscheme= "dark" data-action="like" data-show-faces="true" data-share="true"></div>
   </div>
 
   <div class="horario text-center" onclick="window.location='horarios.html'">
@@ -83,10 +83,10 @@
     data-cycle-prev="#vprev"
 	data-cycle-slides=">li"
     >
-	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(assets/imagens/video-1.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
-	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(assets/imagens/video-3.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
-	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(assets/imagens/video-2.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
-	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(assets/imagens/video-4.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/kHD9k1O18Cs/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/coaho6Vplz0/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/bpAcXd0SORk/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
+	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/Zn8-2hHxGlY/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
 	</div>
 	<a href=# id=vnext><button class="botRight"></button></a>
 	</div><!--Carousel END-->
@@ -143,5 +143,13 @@
 
 </div><!--Container END-->
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=297290550304423";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
