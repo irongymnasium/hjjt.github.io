@@ -13,6 +13,13 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
   <script src="http://malsup.github.io/jquery.cycle2.js"></script>
   <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="assets/fancybox/jquery.fancybox.css" />
+  <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
+  <script>
+  	$(document).ready(function(){
+      $('.photos-galery').fancybox();
+  	});
+	</script>
   <script>$.fn.cycle.defaults.autoSelector = '.carousel';</script>
 </head>
 <body>
@@ -82,10 +89,10 @@
       data-cycle-prev="#vprev"
   	  data-cycle-slides=">li"
       >
-    	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/kHD9k1O18Cs/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
-    	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/coaho6Vplz0/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
-    	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/bpAcXd0SORk/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
-    	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/Zn8-2hHxGlY/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
+    	<li onclick="window.location='http://youtu.be/kHD9k1O18Cs'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/kHD9k1O18Cs/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
+    	<li onclick="window.location='http://youtu.be/coaho6Vplz0'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/coaho6Vplz0/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
+    	<li onclick="window.location='http://youtu.be/bpAcXd0SORk'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/bpAcXd0SORk/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
+    	<li onclick="window.location='http://youtu.be/Zn8-2hHxGlY'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/Zn8-2hHxGlY/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
   	</div>
   	<a href=# id=vnext><button class="botRight"></button></a>
 	</div><!--Carousel END-->
@@ -109,10 +116,11 @@
       data-cycle-prev="#fprev"
       data-cycle-slides=">li"
       >
-  	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(assets/imagens/foto-1.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
-  	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(assets/imagens/foto-3.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
-  	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(assets/imagens/foto-2.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
-  	<li onclick="window.location='horarios.html'" class="img-lk" style="background-image:url(assets/imagens/foto-4.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
+  	<li class="img-lk" style="background-image:url(assets/fotos/1.jpg);background-size:100%"><a class="photos-galery" rel="gallery" href="assets/fotos/1.jpg">photos</a></li>
+  	<li class="img-lk" style="background-image:url(assets/fotos/3.jpg);background-size:100%"><a class="photos-galery" rel="gallery" href="assets/fotos/3.jpg">photos</a></li>
+  	<li class="img-lk" style="background-image:url(assets/fotos/2.jpg);background-size:100%"><a class="photos-galery" rel="gallery" href="assets/fotos/2.jpg">photos</a></li>
+  	<li class="img-lk" style="background-image:url(assets/fotos/4.jpg);background-size:100%"><a class="photos-galery" rel="gallery" href="assets/fotos/4.jpg">photos</a></li>
+  	<li class="img-lk" style="background-image:url(assets/fotos/5.jpg);background-size:100%"><a class="photos-galery" rel="gallery" href="assets/fotos/5.jpg">photos</a></li>
   	</div>
   	<a href=# id=fnext><button class="botRight"></button></a>
 	</div><!--Carousel END-->

@@ -15,8 +15,15 @@
   <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
   <script>$.fn.cycle.defaults.autoSelector = '.list-fotos-box-horario';</script>
   <style>
-  div.vertical { width:140px }
+    div.vertical { width:140px }
   </style>
+  <link rel="stylesheet" type="text/css" media="all" href="assets/fancybox/jquery.fancybox.css" />
+  <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
+  <script>
+  	$(document).ready(function(){
+      $('.photos-galery').fancybox();
+  	});
+	</script>
 </head>
 <body>
 
@@ -135,10 +142,11 @@
     data-cycle-carousel-visible=4
     data-cycle-carousel-vertical=true
     >
-	<li onclick="window.location='horarios.html'" class="img-lk-ver" style="background-image:url(assets/imagens/foto-1.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
-	<li onclick="window.location='horarios.html'" class="img-lk-ver" style="background-image:url(assets/imagens/foto-3.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
-	<li onclick="window.location='horarios.html'" class="img-lk-ver" style="background-image:url(assets/imagens/foto-2.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
-	<li onclick="window.location='horarios.html'" class="img-lk-ver" style="background-image:url(assets/imagens/foto-4.jpg);"><img src="assets/imagens/content-video-play.png"/></li>
+    <li class="img-lk-ver" style="background-image:url(assets/fotos/1.jpg);background-size:100%"><a class="photos-galery" rel="gallery" href="assets/fotos/1.jpg">photos</a></li>
+  	<li class="img-lk-ver" style="background-image:url(assets/fotos/3.jpg);background-size:100%"><a class="photos-galery" rel="gallery" href="assets/fotos/3.jpg">photos</a></li>
+  	<li class="img-lk-ver" style="background-image:url(assets/fotos/2.jpg);background-size:100%"><a class="photos-galery" rel="gallery" href="assets/fotos/2.jpg">photos</a></li>
+  	<li class="img-lk-ver" style="background-image:url(assets/fotos/4.jpg);background-size:100%"><a class="photos-galery" rel="gallery" href="assets/fotos/4.jpg">photos</a></li>
+  	<li class="img-lk-ver" style="background-image:url(assets/fotos/5.jpg);background-size:100%"><a class="photos-galery" rel="gallery" href="assets/fotos/5.jpg">photos</a></li>
 	</div>
 	<a href=# id=next3><button class="botBottom"></button></a>
 	</div><!--Carousel END-->

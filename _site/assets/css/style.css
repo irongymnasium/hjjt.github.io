@@ -75,7 +75,9 @@ a:hover {color:#FFF;}
 .list-videos .botLeft {float:left; margin-right:2px; background:url(../imagens/content-seta-left.jpg) #800000 center center no-repeat;}
 
 .img-lk {cursor:pointer; list-style:none; border:4px solid #CCC; margin:0px 4px; min-width:158px; min-height:114px; background-position:center center; background-repeat:no-repeat;}
+.img-lk a {width:158px; display:block;height:114px;text-indent: -9999px}
 .img-lk-ver {display:table; cursor:pointer; list-style:none; border:4px solid #CCC; margin:0 auto; margin-bottom:10px; padding:0px; width:135px; height:90px; background-position:center center; background-repeat:no-repeat;}
+.img-lk-ver a {width:132px; display:block;height:88px;text-indent: -9999px}
 
 .list-fotos .botRight,
 .list-videos .botRight {float:right; background:url(../imagens/content-seta-right.jpg) #800000 center center no-repeat;}
@@ -90,5 +92,3 @@ a:hover {color:#FFF;}
 .footer .iron img{padding-top:20px; margin-left:20px;}
 .footer .storm  img {padding-top:15px;}
 .footer .rodolfo  img {padding-top:22px; padding-left:20px;}
-
-
