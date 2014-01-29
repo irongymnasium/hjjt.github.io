@@ -15,9 +15,25 @@
   <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
   <link rel="stylesheet" type="text/css" media="all" href="assets/fancybox/jquery.fancybox.css" />
   <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="assets/fancybox/jquery.fancybox-media.js"></script>
   <script>
   	$(document).ready(function(){
       $('.photos-galery').fancybox();
+      $('.fancybox-youtube')
+        .attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
   	});
 	</script>
   <script>$.fn.cycle.defaults.autoSelector = '.carousel';</script>
@@ -89,10 +105,10 @@
       data-cycle-prev="#vprev"
   	  data-cycle-slides=">li"
       >
-    	<li onclick="window.location='http://youtu.be/kHD9k1O18Cs'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/kHD9k1O18Cs/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
-    	<li onclick="window.location='http://youtu.be/coaho6Vplz0'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/coaho6Vplz0/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
-    	<li onclick="window.location='http://youtu.be/bpAcXd0SORk'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/bpAcXd0SORk/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
-    	<li onclick="window.location='http://youtu.be/Zn8-2hHxGlY'" class="img-lk" style="background-image:url(http://img.youtube.com/vi/Zn8-2hHxGlY/0.jpg);background-size:100%;"><img src="assets/imagens/content-video-play.png"/></li>
+    	<li class="img-lk"><a style="background-image:url(http://img.youtube.com/vi/kHD9k1O18Cs/0.jpg);background-size:100%;" class="fancybox-youtube" rel="media-gallery" href="http://www.youtube.com/embed/kHD9k1O18Cs?autoplay=1"><img src="assets/imagens/content-video-play.png"/></a></li>
+    	<li class="img-lk"><a style="background-image:url(http://img.youtube.com/vi/coaho6Vplz0/0.jpg);background-size:100%;" class="fancybox-youtube" rel="media-gallery" href="http://www.youtube.com/embed/coaho6Vplz0?autoplay=1"><img src="assets/imagens/content-video-play.png"/></a></li>
+    	<li class="img-lk"><a style="background-image:url(http://img.youtube.com/vi/bpAcXd0SORk/0.jpg);background-size:100%;" class="fancybox-youtube" rel="media-gallery" href="http://www.youtube.com/embed/bpAcXd0SORk?autoplay=1"><img src="assets/imagens/content-video-play.png"/></a></li>
+    	<li class="img-lk"><a style="background-image:url(http://img.youtube.com/vi/Zn8-2hHxGlY/0.jpg);background-size:100%;" class="fancybox-youtube" rel="media-gallery" href="http://www.youtube.com/embed/Zn8-2hHxGlY?autoplay=1"><img src="assets/imagens/content-video-play.png"/></a></li>
   	</div>
   	<a href=# id=vnext><button class="botRight"></button></a>
 	</div><!--Carousel END-->

@@ -19,9 +19,24 @@
   </style>
   <link rel="stylesheet" type="text/css" media="all" href="assets/fancybox/jquery.fancybox.css" />
   <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="assets/fancybox/jquery.fancybox-media.js"></script>
   <script>
   	$(document).ready(function(){
       $('.photos-galery').fancybox();
+      $('.fancybox-youtube')
+        .attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
   	});
 	</script>
 </head>
@@ -37,7 +52,7 @@
 </div>
 
 <div class="video-horario">
-	<a href="http://youtu.be/kHD9k1O18Cs" style="background-image:url(http://img.youtube.com/vi/kHD9k1O18Cs/0.jpg);background-size:100%;" target="_blank"><img src="assets/imagens/content-video-play.png"/></a>
+	<a class="fancybox-youtube" rel="media-gallery" href="http://www.youtube.com/embed/kHD9k1O18Cs?autoplay=1" style="background-image:url(http://img.youtube.com/vi/kHD9k1O18Cs/0.jpg);background-size:100%;" target="_blank"><img src="assets/imagens/content-video-play.png"/></a>
 </div>
 
 <div class="div-50"></div>
@@ -73,9 +88,9 @@
 			</tr>
 			<tr class="gray bd">
 			  <td><span>10h00</span> </td>
+			  <td>Prof. Gordo</td>
 			  <td></td>
-			  <td></td>
-			  <td></td>
+			  <td>Prof. Gordo</td>
 			  <td></td>
 			  <td class="no-bd">Prof. Black</td>
 			</tr>
@@ -89,9 +104,9 @@
 			</tr>
 			<tr class="graylite bd">
 			  <td><span>16h00</span> </td>
-			  <td>Prof. Black</td>
+			  <td>Prof. Gordo</td>
 			  <td></td>
-			  <td>Prof. Black</td>
+			  <td>Prof. Gordo</td>
 			  <td></td>
 			  <td class="no-bd"></td>
 			</tr>
